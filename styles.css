@@ -47,6 +47,7 @@ h1 {
 
 h2 {
     margin-bottom: 25px;
+
 }
 
 h3 {
@@ -156,6 +157,30 @@ article img {
     background-color: #555;
     color: white;
 }
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 2rem
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.intro p {
+    line-height: 1.6;
+}
+
+.intro-lead {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    max-width: 760px;
+    margin-bottom: 1rem;
+}
+
 
 .projects-grid {
     display: grid;
