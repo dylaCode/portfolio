@@ -125,6 +125,10 @@ article img {
     color: white;
 }
 
+.mobile-lang {
+    display: none;
+}
+
 .header-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -263,5 +267,13 @@ footer a {
 
     .projects-card img {
         height: 140px;
+    }
+
+    .mobile-lang {
+        display: inline-block;
+    }
+
+    .language-switch {
+        display: none;
     }
 }
