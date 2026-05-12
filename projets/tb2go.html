@@ -5,26 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.css">
     <title>TB2Go - Stéphanie Calderara</title>
 </head>
 
 <body>
+    <header class="site-header">
+        <a href="de/index.html" class="language-switch">DE</a>
+        
+        <div class="header-content">
+            <h1>Stéphanie Calderara</h1>
+            <p>Portfolio technique</p>
 
-    <header>
-        <h1>Stéphanie Calderara</h1>
-        <p>Portfolio technique</p>
-
-        <nav>
-            <a href="../index.html">Projets</a>
-            <a href="../cv/cv-stephanie-calderara.pdf" target="_blank">CV</a>
-            <a href="../de/index.html">DE</a>
-        </nav>
+            <nav class="main-nav">
+                <a href="../index.html" class="active">Projets</a>
+                <a href="../cv/cv-stephanie-calderara.pdf" target="_blank">CV</a>
+                <a href="../de/index.html" class="mobile-lang">DE</a>          
+            </nav>
+        </div>
     </header>
 
     <main>
         <section>
             <h2>TB2Go</h2>
-            <p>Application web de gestion de matériel développée pour une télévision locale.</p>
+            <p>
+                TB2Go est une application web développée pour centraliser et simplifier
+                la gestion du matériel technique au sein d’une télévision locale.
+            </p>
+
+            <p>
+                Le projet est né d’un besoin concret : améliorer la réservation,
+                le suivi et la maintenance des équipements utilisés quotidiennement
+                par les équipes de production.
+            </p>
+
+            </p>
+                L’application permet de gérer les réservations de matériel,
+                les utilisateurs, les catégories d’équipement, l’historique des emprunts
+                ainsi que le suivi des incidents techniques.
+            <p>
+        </section>
+
+        <section>
+            <h3>Technologies utilisées</h3>
+            <ul>
+                <li>Frontend : HTML, CSS, JavaScript, Bootstrap</li>
+                <li>Backend : Python / Flask</li>
+                <li>Templates : Jinja2</li>
+                <li>Base de données : SQLite</li>
+                <li>Versioning : Git / GitHub</li>
+                <li>Déploiement : PythonAnywhere</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Fonctionnalités clés</h3>
+            <ul>
+                <li>Gestion des utilisateurs avec rôles et permissions</li>
+                <li>Système de réservation de matériel avec calendrier intégré</li>
+                <li>Historique complet des emprunts et retours</li>
+                <li>Suivi et documentation des incidents techniques</li>
+                <li>Gestion centralisée des équipements et catégories</li>
+                <li>Interface responsive adaptée desktop, tablette et mobile</li>
+                <li>Gestion sécurisée des connexions utilisateurs</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Approche de développement</h3>
+            <p>
+                Ce projet a été développé avec une assistance d’outils
+                d’intelligence artificielle, utilisés comme support au développement
+                et au prototypage rapide. J’ai défini les besoins, orienté
+                les choix fonctionnels, testé les fonctionnalités et piloté les
+                évolutions du projet.
+            </p>   
+        </section>
+
+        <section>
+            <h3>Captures d'écran</h3>
+
+        <div class="gallery">
+            <a href="../images/tb2go-dashboard.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-dashboard.png" alt="Dashboard TB2Go">
+            </a>
+
+            <a href="../images/tb2go-equipment-list.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-equipment-list.png" alt="Liste du matériel TB2Go">
+            </a>
+
+            <a href="../images/tb2go-equipment-detail.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-equipment-detail.png" alt="Détail d’un équipement TB2Go">
+            </a>
+
+            <a href="../images/tb2go-booking-form.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-booking-form.png" alt="Formulaire de réservation TB2Go">
+            </a>
+
+            <a href="../images/tb2go-calendar.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-calendar.png" alt="Planning des réservations TB2Go">
+            </a>
+
+            <a href="../images/tb2go-issues.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/tb2go-issues.png" alt="Gestion des incidents techniques TB2Go">
+            </a>
+        </div>
+        </section>
+
+        <section>
+            <h3>Vidéo de démonstration</h3>
+
+            <p>Une démonstration vidéo sera ajoutée prochainement.</p>
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
 </body>

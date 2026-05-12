@@ -185,7 +185,6 @@ article img {
     margin-bottom: 1rem;
 }
 
-
 .projects-grid {
     max-width: 900px;
     margin: 0 auto 3rem;
@@ -235,6 +234,23 @@ article img {
 .projects-card article:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
 }
 
 footer {
