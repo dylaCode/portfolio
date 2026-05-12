@@ -202,6 +202,27 @@ article img {
     margin-bottom: 1rem;
 }
 
+.projects-text {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.projects-subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: -18px;
+    margin-bottom: 0;
+    color: #666; 
+}
+
+.projects-logo {
+    display: block;
+    max-width: 140px;
+    margin: 20px auto 30px;
+}
+
 .projects-grid {
     max-width: 900px;
     margin: 0 auto 3rem;
