@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.css">
-    <title>TB2Go - Stéphanie Calderara</title>
+    <title>Prototype site web - Stéphanie Calderara</title>
 </head>
 
 <body>
@@ -27,26 +27,25 @@
 
     <main>
         <section class="projects-text">
-            <img src="../images/tb2go.png" alt="TB2Go" class="projects-logo">
+            <img src="../images/telebielingue-ch.png" alt="Prototype site web" class="projects-logo">
             <p class="projects-subtitle">
-                Gestion et réservation de matériel
+                Prototype de site web pour une télévision locale
             </p>
 
             <p>
-                TB2Go est une application web développée pour centraliser et simplifier
-                la gestion du matériel technique au sein d’une télévision locale.
+                Ce projet présente un prototype fonctionnel de site web développé
+                pour une télévision locale.
             </p>
 
             <p>
-                Le projet est né d’un besoin concret : améliorer la réservation,
-                le suivi et la maintenance des équipements utilisés quotidiennement
-                par les équipes de production.
+                L’objectif était d’explorer une refonte moderne du site web,
+                avec une interface orientée contenu, vidéo et diffusion en direct 
             </p>
 
             </p>
-                L’application permet de gérer les réservations de matériel,
-                les utilisateurs, les catégories d’équipement, l’historique des emprunts
-                ainsi que le suivi des incidents techniques.
+                Le prototype inclut une interface publique ainsi qu’un système
+                d’administration permettant la gestion des émissions,
+                contenus promotionnels, partenaires et éléments visuels comme des slides.
             <p>
         </section>
 
@@ -59,7 +58,6 @@
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
-                    <span>Bootstrap</span>
                 </div>
             </div>
 
@@ -73,9 +71,17 @@
             </div>
 
             <div class="tech-group">
-                <strong>Base de données</strong>
+                <strong>Stockage des données</strong>
                 <div class="tech-badges">   
-                    <span>SQLite</span>
+                    <span>JSON</span>
+                </div>
+            </div>
+
+            <div class="tech-group">
+                <strong>Intégration</strong>
+                <div class="tech-badges">   
+                    <span>YouTube</span>
+                    <span>Google Maps</span>
                 </div>
             </div>
 
@@ -99,52 +105,40 @@
             <h3>Fonctionnalités clés</h3>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h4>Gestion des utilisateurs</h4>
+                    <h4>Gestion du contenu</h4>
                     <p>
-                        Système de gestion des utilisateurs avec rôles et permissions pour 
-                        contrôler l’accès aux différentes fonctionnalités de l’application.
+                        Création et modification des émissions, slides et contenus 
+                        promotionnels via une interface d’administration.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Réservation de matériel</h4>
+                    <h4>Diffusion vidéo</h4>
                     <p>
-                        Système de réservation de matériel avec calendrier intégré pour gérer les disponibilités.
+                        Intégration de flux vidéo en direct et de contenus YouTube.                
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Suivi du matériel</h4>
+                    <h4>Architecture légère</h4>
                     <p>
-                        Fiches détaillées, catégories, images et informations techniques.
+                        Stockage JSON sans base de données pour un prototypage rapide.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Historique des réservations</h4>
+                    <h4>Responsive design</h4>
                     <p>
-                        Historique complet des réservations et retours pour un suivi efficace.
+                        Interface adaptée sur ordinateur, tablette et mobile.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Incidents techniques</h4>
+                    <h4>Intégrations externes</h4>
                     <p>
-                        Suivi et documentation des incidents techniques pour une résolution rapide.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Gestion centralisée</h4>
-                    <p>
-                        Gestion centralisée des équipements et catégories pour une meilleure organisation.
+                        Intégration de services externes comme YouTube et Google Maps.
                     </p>
                 </div>
                 <div class="feature-card">
                     <h4>Interface responsive</h4>
                     <p>
                         Utilisation adaptée sur ordinateur, tablette et mobile.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Connexion sécurisée</h4>
-                    <p>
-                        Gestion sécurisée des connexions utilisateurs.
                     </p>
                 </div>
             </div>
@@ -157,6 +151,13 @@
                 utilisés comme assistance au développement. Le besoin fonctionnel, les
                 choix d’orientation et les validations ont été définis et pilotés par mes soins
                 tout au long du projet.
+            </p>   
+
+            <p>
+                Les données sont stockées dans des fichiers JSON afin de garder une
+                architecture légère et adaptée à une phase de prototype. Cette structure
+                pourrait évoluer vers une base SQLite si le projet devait être utilisé
+                de manière plus complète.
             </p>   
         </section>
 
