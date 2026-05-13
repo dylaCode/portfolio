@@ -217,11 +217,15 @@ article img {
     color: #666; 
 }
 
-.projects-logo {
+.projects-tb2go-logo {
     margin-bottom: 12px;
-    max-width: 180px;
+    max-width: 200px;
     margin: 20px auto 30px;
-    
+}
+
+.projects-tbweb-logo {
+    margin-bottom: -45px;
+    max-width: 280px;
 }
 
 .projects-grid {
