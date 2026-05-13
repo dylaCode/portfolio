@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speech Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+  <h1>Speech Timer</h1>
+
+  <div id="topBar">
+    <button id="resetBtn" type="button">Reset</button>
+    <button id="settingsBtn" type="button">Settings</button>
+    <button id="layoutBtn" type="button">Layout</button>
+  </div>
+
+  <div id="cards"></div>
+
+  <div id="settingsPanel" class="panel hidden">
+    <h2>Settings</h2>
+
+    <label class="row">
+      Dark mode
+      <input id="darkModeInput" type="checkbox" />
+    </label>
+
+    <label>
+      Number of guests
+      <input id="guestCountInput" type="number" min="1" max="12" value="5" />
+    </label>
+
+    <label>
+      Alert gap (seconds)
+      <input id="alertGapInput" type="number" min="0" value="10" />
+    </label>
+
+    <div id="guestNamesArea"></div>
+
+    <div class="panelActions">
+      <button id="saveSettingsBtn" type="button">Save</button>
+      <button id="closeSettingsBtn" type="button">Close</button>
+    </div>
+  </div>
+
+  <div id="pausedOverlay" class="overlay hidden">PAUSED</div>
+  <div id="layoutOverlay" class="overlay hidden">LAYOUT MODE</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
