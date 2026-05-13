@@ -217,6 +217,14 @@ article img {
     color: #666; 
 }
 
+.projects-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
 .projects-tb2go-logo {
     margin-bottom: 12px;
     max-width: 200px;
@@ -226,6 +234,11 @@ article img {
 .projects-tbweb-logo {
     margin-bottom: -45px;
     max-width: 280px;
+}
+
+.projects-speech-timer-logo {
+    max-width: 220px;
+    margin-bottom: 20px;
 }
 
 .projects-grid {
@@ -343,6 +356,24 @@ article img {
 
 .gallery img:hover {
     transform: scale(1.02);
+}
+
+.demo-button {
+    display: inline-block;
+    margin: 10px 30px;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    background-color: #555;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}   
+
+.demo-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
 }
 
 footer {
