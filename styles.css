@@ -462,10 +462,16 @@ footer a {
         grid-template-columns: 1fr;
     }
     .tech-group {
-        grid-template-columns: 1fr;
-        gap: 8px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .tech-group strong {
+        display: block;
+        margin-bottom: 10px;
     }
     .tech-badges {
-        margin-bottom: 10px;
+        display: flex;        
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
