@@ -238,7 +238,6 @@ article img {
 
 .projects-meteo-logo {
     max-width: 220px;
-    margin-bottom: 20px;
 }
 
 .projects-speech-timer-logo {
@@ -295,6 +294,12 @@ article img {
 .projects-card article:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.projects-note {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
 }
 
 .tech-group {
