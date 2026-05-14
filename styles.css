@@ -315,16 +315,15 @@ article img {
 }
 
 .tech-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: 180px 1fr;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     margin-bottom: 15px;
-    flex-wrap: wrap;
 }
 
 .tech-group strong {
-    display: block;
-    margin-bottom: 12px;
+    margin: 0;
     color: #444;
 }
 
@@ -461,5 +460,12 @@ footer a {
     }
     .gallery {
         grid-template-columns: 1fr;
+    }
+    .tech-group {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .tech-badges {
+        margin-bottom: 10px;
     }
 }
