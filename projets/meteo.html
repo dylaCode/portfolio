@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.css">
-    <title>Speech Timer - Stéphanie Calderara</title>
+    <title>Météo - Stéphanie Calderara</title>
 </head>
 
 <body>
@@ -27,38 +27,29 @@
 
     <main>
         <section class="projects-text">
-            
-            <div class="projects-header-row">
-                <img src="../images/speech-timer.png" alt="Speech Timer" class="projects-speech-timer-logo">
-         
-                <a href="../apps/speech-timer/index.html"
-                    target="_blank"
-                    class="demo-button">
-                    Tester l’application
-                </a>
-            </div>
-
+            <img src="../images/meteo.png" alt="Émission Météo" class="projects-tb2go-logo">
             <p class="projects-subtitle">
-                Outil web de suivi du temps de parole en direct
+                Habillage web pour l’émission météo
             </p>
 
             <p>
-                Speech Timer est une application web interactive conçue pour suivre 
-                en temps réel le temps de parole de plusieurs intervenants lors d'un 
-                débat ou d’une réunion. 
+                Ce projet a été développé dans le contexte de la production de l’émission
+                météo de TeleBielingue, avec pour objectif de créer les différentes pages
+                météo utilisées à l’antenne via le programme graphique CasparCG.
             </p>
 
             <p>
-                Le projet a été pensé pour une utilisation lors d'enregistrements 
-                d'émissions, avec une interface rapide à utiliser sous pression et 
-                des interactions simples via clic ou raccourcis clavier.
+                Les pages sont servies depuis un serveur web interne, puis affichées
+                dans CasparCG pour l'enregistrement de l'émission. Le système permet de 
+                générer plusieurs slides météo : prévisions du matin, prévisions de l’après-midi, 
+                températures et prévisions sur quatre jours.
             </p>
 
             </p>
-                L’application permet de chronométrer plusieurs participants, mettre
-                une session en pause, ajuster manuellement les temps et visualiser
-                rapidement les écarts grâce à des alertes visuelles.
-            <p>
+                Les données météo sont fournies sous forme de fichiers XML. Le programme 
+                lit ces données et affiche automatiquement les éléments correspondants sur 
+                les différentes pages.
+            </p>
         </section>
 
         <section class="projects-text">
@@ -72,61 +63,60 @@
                     <span>JavaScript</span>
                 </div>
             </div>
+
+            <div class="tech-group">
+                <strong>Broadcast</strong>
+                <div class="tech-badges">
+                    <span>CasparCG</span>
+                </div>
+            </div>
+
+            <div class="tech-group">
+                <strong>Données</strong>
+                <div class="tech-badges">   
+                    <span>XML</span>
+                </div>
+            </div>
         </section>
 
         <section class="projects-text">
             <h3>Fonctionnalités clés</h3>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h4>Chronométrage temps réel</h4>
+                    <h4>Import des données météo</h4>
                     <p>
-                        Suivi simultané du temps de parole de plusieurs 
-                        intervenants avec affichage clair et lisible.
+                        Lecture de fichiers XML pour alimenter automatiquement les contenus météo.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Raccourcis clavier</h4>
+                    <h4>Génération de plusieurs cartes météo</h4>
                     <p>
-                        Contrôle rapide sans navigation souris pour une 
-                        utilisation fluide en situation de stress.
+                        Prévisions du matin, de l’après-midi, températures et 
+                        prévisions des quatre prochains jours.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Ajustements manuels</h4>
+                    <h4>Intégration CasparCG</h4>
                     <p>
-                        Possibilité de corriger les temps en cas d’erreur ou 
-                        de pause imprévue.
+                        Pages web conçues pour un affichage à l’antenne dans un environnement broadcast.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Alertes visuelles</h4>
+                    <h4>Placement graphique précis</h4>
                     <p>
-                        Signalisation immédiate des écarts de temps de parole.
+                        Positionnement contrôlé des températures, des différents éléments graphiques et pictogrammes météo.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Interface personnalisable</h4>
+                    <h4>Mise à jour simplifiée</h4>
                     <p>
-                        Configuration de nombre d'intervenants, des noms et des 
-                        seuils d'alerte.
+                        Solution plus flexible et plus facilement modifiable qu’un système figé.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h4>Réorganisation libre</h4>
+                    <h4>Usage en production TV</h4>
                     <p>
-                        Déplacement dynamique des cartes selon les besoins.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Interface responsive</h4>
-                    <p>
-                        Utilisation adaptée sur ordinateur, tablette et mobile.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Connexion sécurisée</h4>
-                    <p>
-                        Gestion sécurisée des connexions utilisateurs.
+                        Projet développé pour répondre à un besoin concret de diffusion télévisuelle.
                     </p>
                 </div>
             </div>
@@ -148,22 +138,29 @@
             <p>Quelques écrans représentatifs de l’application et de ses principales fonctionnalités.</p>
 
         <div class="gallery">
-            <a href="../images/speech-timer-interface.png" class="glightbox" data-gallery="tb2go">
-                <img src="../images/speech-timer-interface.png" alt="Interface Speech Timer">
+            <a href="../images/meteo-matin.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/meteo-matin.png" alt="Météo du matin">
             </a>
 
-            <a href="../images/speech-timer-layout.png" class="glightbox" data-gallery="tb2go">
-                <img src="../images/speech-timer-layout.png" alt="Layout Speech Timer">
+            <a href="../images/meteo-apres-midi.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/meteo-apres-midi.png" alt="Météo de l'après-midi">
             </a>
 
+            <a href="../images/meteo-temperatures.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/meteo-temperatures.png" alt="Températures">
+            </a>
+
+            <a href="../images/meteo-previsions.png" class="glightbox" data-gallery="tb2go">
+                <img src="../images/meteo-previsions.png" alt="Prévisions">
+            </a>
         </div>
         </section>
 
-        <a href="../apps/speech-timer/index.html"
-            target="_blank"
-            class="demo-button-bottom">
-            Tester l’application
-        </a>
+        <section class="projects-text">
+            <h3>Vidéo de démonstration</h3>
+
+            <p>Une démonstration vidéo sera ajoutée prochainement.</p>
+        </section>
 
         <footer id="contact">
             <p>Stéphanie Calderara • Nidau, Suisse • 2026</p>
@@ -181,3 +178,4 @@
         });
     </script>
 </body>
+</html>

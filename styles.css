@@ -236,6 +236,11 @@ article img {
     max-width: 280px;
 }
 
+.projects-meteo-logo {
+    max-width: 220px;
+    margin-bottom: 20px;
+}
+
 .projects-speech-timer-logo {
     max-width: 220px;
     margin-bottom: 20px;
@@ -372,6 +377,24 @@ article img {
 }   
 
 .demo-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.demo-button-bottom {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding: 12px 20px;
+    background-color: #555;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}   
+
+.demo-button-bottom:hover {
     background-color: #333;
     transform: translateY(-2px);
 }
