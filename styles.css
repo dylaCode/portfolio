@@ -419,6 +419,47 @@ article img {
     transform: translateY(-2px);
 }
 
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 12px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .demo-button {
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 10px 0 30px auto;
+}
+
 footer {
     color:#666;
     text-align: center;
