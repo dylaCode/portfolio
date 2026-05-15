@@ -33,13 +33,12 @@
                 N'hésitez pas à me contacter pour discuter de projets, d'idées ou simplement pour échanger.
             </p>
 
-            <form action="https://formspree.io/f/mgodjeez" method="post" class="contact-form">
-                <input type="hidden" name="_redirect" value="https://dylacode.github.io/portfolio/merci.html">
- 
+            <form id="contact-form" action="https://formspree.io/f/mgodjeez" method="post" class="contact-form">
+
                 <label for="name">Nom</label>
                 <input type="text" id="name" name="name" required>
 
-                <labelfor="email">Email</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="subject">Sujet</label>
@@ -48,20 +47,49 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="8" required></textarea>
 
-                <button type="submit" class="demo-button">Envoyer</button>
+                <div class="form-actions">
+                    <p id="form-status" class="form-status"></p>
+                    <button type="submit" class="demo-button">Envoyer</button>
+                </div>
             </form>
 
         </section>
 
         <footer id="contact">
             <p>Stéphanie Calderara • Nidau, Suisse • 2026</p>
-
-            <p>
-                <a href="mailto:steph.calderara@gmail.com">Me contacter</a>
-            </p>
         </footer>
-
-
     </main>
+
+    <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault();
+            status.className = "form-status";
+            status.textContent = "";
+
+            const data = new FormData(form);
+            const response = await fetch("https://formspree.io/f/mgodjeez", {
+                method: "POST",
+                body: data,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            console.log(response);
+
+            if(response.ok) {
+                status.textContent = "Merci pour votre message !";
+                status.className = "form-status success";
+                form.reset();
+            } else {
+                status.textContent = "Une erreur est survenue. Veuillez réessayer.";
+                status.className = "form-status error";
+            }
+
+        });
+    </script>
 </body>
 </html>
