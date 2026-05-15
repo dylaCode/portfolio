@@ -33,22 +33,23 @@
             </p>
 
             <p>
-                Ce projet a été développé dans le contexte de la production de l’émission
-                météo de TeleBielingue, avec pour objectif de créer les différentes pages
-                météo utilisées à l’antenne via le programme graphique CasparCG.
+                Ce projet est utilisé pour la production de l’émission météo de 
+                TeleBielingue. Les cartes météo sont affichées via CasparCG, puis 
+                enregistrées pour être intégrées ensuite au montage de l’émission.
             </p>
 
             <p>
-                Les pages sont servies depuis un serveur web interne, puis affichées
-                dans CasparCG pour l'enregistrement de l'émission. Le système permet de 
-                générer plusieurs slides météo : prévisions du matin, prévisions de l’après-midi, 
-                températures et prévisions sur quatre jours.
+                Les pages météo sont réalisées en HTML, CSS et JavaScript, puis servies 
+                depuis un serveur web interne. Le système génère automatiquement les 
+                différentes cartes nécessaires : prévisions du matin, prévisions de 
+                l’après-midi, températures et prévisions sur quatre jours.
             </p>
 
             <p>
-                Les données météo sont fournies sous forme de fichiers XML. Le programme 
-                lit ces données et affiche automatiquement les éléments correspondants sur 
-                les différentes pages.
+                Les données météo proviennent d’un fichier XML reçu quotidiennement. 
+                Un script JavaScript lit ce fichier et remplit automatiquement les 
+                différentes cartes, ce qui permet de produire rapidement l’émission 
+                sans intervention manuelle.
             </p>
         </section>
 
@@ -83,40 +84,36 @@
             <h3>Fonctionnalités clés</h3>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h4>Import des données météo</h4>
+                    <h4>Import automatique des données météo</h4>
                     <p>
-                        Lecture de fichiers XML pour alimenter automatiquement les contenus météo.
+                        Lecture quotidienne du fichier XML pour alimenter 
+                        automatiquement les contenus météo.
                     </p>
                 </div>
+
                 <div class="feature-card">
-                    <h4>Génération de plusieurs cartes météo</h4>
+                    <h4>Génération des cartes météo</h4>
                     <p>
                         Prévisions du matin, de l’après-midi, températures et 
-                        prévisions des quatre prochains jours.
+                        prévisions des quatre prochains jours, avec 
+                        positionnement précis des éléments graphiques.
                     </p>
                 </div>
+
                 <div class="feature-card">
-                    <h4>Intégration CasparCG</h4>
+                    <h4>Affichage via CasparCG</h4>
                     <p>
-                        Pages web conçues pour un affichage à l’antenne dans un environnement broadcast.
+                        Pages web conçues pour être affichées dans CasparCG lors 
+                        de l’enregistrement de l’émission.
                     </p>
                 </div>
+
                 <div class="feature-card">
-                    <h4>Placement graphique précis</h4>
+                    <h4>Utilisation en production réelle</h4>
                     <p>
-                        Positionnement contrôlé des températures, des différents éléments graphiques et pictogrammes météo.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Mise à jour simplifiée</h4>
-                    <p>
-                        Solution plus flexible et plus facilement modifiable qu’un système figé.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h4>Usage en production TV</h4>
-                    <p>
-                        Projet développé pour répondre à un besoin concret de diffusion télévisuelle.
+                        Outil utilisé quotidiennement pour la production de l’émission 
+                        météo de TeleBielingue, avec une structure facilement adaptable 
+                        selon les besoins.
                     </p>
                 </div>
             </div>
@@ -125,17 +122,16 @@
         <section class="projects-text">
             <h3>Approche de développement</h3>
             <p>
-                Ce projet a été développé avec l’appui d’outils d’intelligence artificielle
-                utilisés comme assistance au développement. Le besoin fonctionnel, les
-                choix d’orientation et les validations ont été définis et pilotés par mes soins
-                tout au long du projet.
+                Ce projet a été développé avec l’aide d’outils d’intelligence artificielle 
+                utilisés comme assistance au développement. Le concept, les choix techniques, 
+                les tests et les ajustements ont toutefois été réalisés par mes soins tout au 
+                long du projet.
             </p>   
         </section>
 
         <section class="projects-text">
             <h3>Captures d’écran</h3>
 
-            <p>Quelques écrans représentatifs de l’application et de ses principales fonctionnalités.</p>
 
         <div class="gallery">
             <a href="../images/meteo-matin.png" class="glightbox" data-gallery="meteo">
@@ -163,13 +159,15 @@
 
         <section class="projects-text">
             <h3>Vidéo de démonstration</h3>
+
             <div class="video-preview-container">
-                <a href="../videos/meteo-demo.mp4" class="glightbox" data-type="video">
+                <a href="../videos/meteo-demo.mp4" class="glightbox video-link" data-type="video">
                     <img class="video-preview" src="../images/meteo-preview.png" alt="Vidéo de démonstration">
+                    <span class="play-button">▶</span>
                 </a>
             </div>
 
-            <p class="projects-note">
+            <p class="projects-note-video">
                 Les images ci-dessus proviennent de l’émission météo de TeleBielingue.
             </p>
         </section>
