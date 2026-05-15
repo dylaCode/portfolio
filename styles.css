@@ -388,8 +388,9 @@ article img {
 }
 .gallery img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.08);
+    height: 100%;
+    object-fit: cover;
+    display: block;
     transition: transform 0.2s ease;
 }
 
