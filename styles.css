@@ -123,6 +123,7 @@ article img {
 }
 
 .language-switch {
+    display: none;
     position: absolute;
     top: 1.2rem;
     right: 1.5rem;
