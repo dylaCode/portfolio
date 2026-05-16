@@ -583,7 +583,7 @@ footer a {
     }
 
     .mobile-lang {
-        display: inline-block;
+        display: none;
     }
 
     .language-switch {
