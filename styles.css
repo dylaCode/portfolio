@@ -535,26 +535,47 @@ footer a {
         height: 140px;
     }
 
-    .mobile-lang {
-        display: none;
-    }
-
-    .language-switch {
-        display: none;
-    }
     .gallery {
         grid-template-columns: 1fr;
     }
+
     .tech-group {
         display: block;
         margin-bottom: 20px;
     }
+
     .tech-group strong {
         display: block;
     }
+    
     .tech-badges {
         display: flex;        
         flex-wrap: wrap;
         gap: 10px;
+    }
+
+    .site-header {
+        padding: 1rem 0.75rem 0.5rem;
+    }
+
+    .hero-banner {
+        height: 140px;
+        max-width: 100%;
+        border-radius: 18px;
+    }
+
+    .hero-banner img {
+        object-position: center 40%;
+    }
+
+    .main-nav {
+        bottom: 10px;
+        gap: 0.3rem;
+        padding: 0.35rem;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+        padding: 0.45rem 0.8rem;
     }
 }
