@@ -558,14 +558,16 @@ footer a {
         padding: 1rem 0.75rem 0.5rem;
     }
 
+@media (max-width: 700px) {
+
     .hero-banner {
-        height: 95px;
+        height: 120px;
         max-width: 100%;
         border-radius: 18px;
     }
 
     .hero-banner img {
-        object-position: center 40%;
+        object-position: center 32%;
     }
 
     .main-nav {
@@ -578,4 +580,5 @@ footer a {
         font-size: 13px;
         padding: 0.4rem 0.65rem;
     }
+}
 }
