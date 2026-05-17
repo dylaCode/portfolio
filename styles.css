@@ -559,7 +559,7 @@ footer a {
     }
 
     .hero-banner {
-        height: 90px;
+        height: 95px;
         max-width: 100%;
         border-radius: 18px;
     }
@@ -569,13 +569,13 @@ footer a {
     }
 
     .main-nav {
-        bottom: 10px;
-        gap: 0.3rem;
-        padding: 0.35rem;
+        bottom: 6px;
+        gap: 0.25rem;
+        padding: 0.25rem;
     }
 
     .main-nav a {
-        font-size: 14px;
-        padding: 0.45rem 0.8rem;
+        font-size: 13px;
+        padding: 0.4rem 0.65rem;
     }
 }
