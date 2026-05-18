@@ -517,11 +517,6 @@ footer a {
 }
 
 @media (max-width: 700px) {
-
-    .site-header {
-        padding: 1rem 0.75rem 0.5rem;
-    }
-
     .hero-banner {
         height: 120px;
         max-width: 100%;
