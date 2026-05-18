@@ -517,48 +517,6 @@ footer a {
 }
 
 @media (max-width: 700px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-
-    .intro {
-        padding: 1.5rem 1rem 1rem;
-    }
-
-    .projects-card article {
-        height: auto;
-        min-height: 230px;
-    }
-
-    .projects-card img {
-        height: 140px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .tech-group {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .tech-group strong {
-        display: block;
-    }
-    
-    .tech-badges {
-        display: flex;        
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .site-header {
-        padding: 1rem 0.75rem 0.5rem;
-    }
-
-@media (max-width: 700px) {
 
     .site-header {
         padding: 1rem 0.75rem 0.5rem;
