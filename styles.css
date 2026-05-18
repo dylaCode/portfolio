@@ -538,4 +538,18 @@ footer a {
         line-height: 1.4;
         margin-top: 0.8rem;
     }
+
+    .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    }
+
+    .projects-card article {
+        height: auto;
+        min-height: auto;
+    }
+
+    .projects-card img {
+        height: 140px;
+    }
 }
