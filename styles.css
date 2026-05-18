@@ -529,9 +529,8 @@ footer a {
     }
 
     .hero-banner img {
-        object-fit: contain;
+        object-fit: cover;
         object-position: center top;
-        background-color: #f4f6f8;
     }
 
     .main-nav {
