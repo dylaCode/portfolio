@@ -532,7 +532,7 @@ footer a {
         object-fit: cover;
         display: block;
 
-        transform: scale(1.25) translateY(-20px);
+        transform: scale(1.25) translateY(-100px);
     }
 
     .main-nav {
